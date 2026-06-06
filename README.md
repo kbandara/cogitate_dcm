@@ -1,4 +1,4 @@
-## **Dynamic Causal Modelling analysis of the Cogitate Consortium MEG dataset**
+## Dynamic Causal Modelling analysis of the Cogitate Consortium MEG dataset
 
 > *Kav Bandara — University of Melbourne, 2025*
 
