@@ -12,13 +12,13 @@ Scripts are split into two batches (`_b1`, `_b2`), corresponding to the discover
 
 The analysis has four main steps:
 
-# 1. MEG Preprocessing (`s01_prepro`)
+### 1. MEG Preprocessing (`s01_prepro`)
 
-# 2. Source Reconstruction and ROI Localisation (`s02_source_analysis`)
+## 2. Source Reconstruction and ROI Localisation (`s02_source_analysis`)
 
 # 3. Dynamic Causal Modelling (`s03_dcm`)
 
-# 4. PEB Hypothesis Testing  (`s04_peb`)
+### 4. PEB Hypothesis Testing  (`s04_peb`)
 
 ## Dependencies
 
