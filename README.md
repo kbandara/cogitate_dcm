@@ -4,15 +4,17 @@
 
 
 
+
 This repo contains the analysis pipeline used to apply dynamic causal modelling (DCM) to the MEG dataset released by the Cogitate Consortium ([2025](https://doi.org/10.1038/s41586-025-08888-1)).
 
 Scripts are split into two batches (`_b1`, `_b2`), corresponding to the discovery and validation data split used in the current analysis. Note also that some scripts are functions which accept a participant index and time-window index, enabling parallelisation using job arrays on a HPC cluster.
 
 
 
+
 ## Pipeline
 
-The analysis has four main steps 
+The analysis has four main steps:
 
 ### 1. MEG Preprocessing (`s01_prepro`)
 
