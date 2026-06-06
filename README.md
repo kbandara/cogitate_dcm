@@ -1,6 +1,6 @@
 ## Dynamic Causal Modelling analysis of the Cogitate Consortium MEG dataset
 
-> *Kav Bandara* University of Melbourne, 2025
+> ***Kav Bandara** University of Melbourne, 2025*
 
 
 This repo contains the analysis pipeline used to apply dynamic causal modelling (DCM) to the MEG dataset released by the Cogitate Consortium ([2025](https://doi.org/10.1038/s41586-025-08888-1)).
