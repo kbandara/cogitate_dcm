@@ -29,14 +29,14 @@ SPM12 is freely available from the [Wellcome Centre for Human Neuroimaging](http
 
 ## HPC Usage
 
-Functions in `s01_prepro`, `s03_dcm_etw`, and `s04_dcm_offset` accept integer arguments indexing the participant list and the time window. These are designed to be submitted as SLURM jobs to run the analysis in parallel, e.g.:
+Functions in `s01_prepro`, `s03_dcm_etw`, and `s04_dcm_offset` accept integer arguments indexing the participant list and the time window. These are designed to be submitted as SLURM jobs to run the analysis in parallel for the computationally intensive steps, e.g.:
 
 ```bash
-# Submit one job per participant × time window combination
+# Submit one job per participant and time window 
 sbatch --array=1-480 dcm_etw.sh  # 48 participants x 10 time windows
 ```
 
-A testing block at the top of each function (commented out by default) allows single-job execution during development:
+A testing block at the top of each function (commented out by default) allows running a single participant/time window within the matlab editor:
 
 ```matlab
 % time_window = 1; p_names_idx = 1;
