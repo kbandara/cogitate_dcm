@@ -3,13 +3,9 @@
 > *Kav Bandara — University of Melbourne, 2025*
 
 
-
-
 This repo contains the analysis pipeline used to apply dynamic causal modelling (DCM) to the MEG dataset released by the Cogitate Consortium ([2025](https://doi.org/10.1038/s41586-025-08888-1)).
 
 Scripts are split into two batches (`_b1`, `_b2`), corresponding to the discovery and validation data split used in the current analysis. Note also that some scripts are functions which accept a participant index and time-window index, enabling parallelisation using job arrays on a HPC cluster.
-
-
 
 
 ## Pipeline
@@ -29,7 +25,6 @@ The analysis has four main steps:
 This analysis pipeline was run using matlab 2024b and SPM12. 
 
 SPM12 is freely available from the [Wellcome Centre for Human Neuroimaging](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/).
-
 
 
 ## HPC Usage
