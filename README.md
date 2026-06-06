@@ -27,7 +27,7 @@ This analysis pipeline was run using matlab 2024b and SPM12.
 SPM12 is freely available from the [Wellcome Centre for Human Neuroimaging](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/).
 
 
-## HPC Usage
+## HPC Usage & Parallel Processing
 
 Functions in `s01_prepro`, `s03_dcm_etw`, and `s04_dcm_offset` accept integer arguments indexing the participant list and the time window. These are designed to be submitted as SLURM jobs to run the analysis in parallel for the computationally intensive steps, e.g.:
 
