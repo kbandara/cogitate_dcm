@@ -41,10 +41,3 @@ A testing block at the top of each function (commented out by default) allows ru
 ```matlab
 % time_window = 1; p_names_idx = 1;
 ```
-
-
-## Data Availability
-
-The Cogitate MEG dataset is publicly available. Please refer to the [official data release documentation](https://cogitate-consortium.github.io/cogitate-data/). 
-
-
