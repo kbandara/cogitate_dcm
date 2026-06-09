@@ -72,7 +72,7 @@ dcm_filename = ['DCM_offset_' p_names{PP} '_' num2str(current_time_window_end) '
 %{ 
 for move = 1:length(p_names)
     
-    source_file = fullfile(filepath, ['ronly_meg_bc_lf_ra_r_ms_re_ALL_a_d_spmeeg_sub-' p_names{move} '_ses-1_task-dur_run-01_meg.mat']);
+    source_file = fullfile(filepath, ['ronly_meg_bc_lf_ra_r_ms_re_faces_a_d_spmeeg_sub-' p_names{move} '_ses-1_task-dur_run-01_meg.mat']);
     
     spm_jobman('initcfg');
 
@@ -93,11 +93,11 @@ for move = 1:length(p_names)
     spm_jobman('run', matlabbatch); clear matlabbatch;
 
     % shift both to start from -100ms 
-    D_short = spm_eeg_load(fullfile(filepath, ['short_offset_ronly_meg_bc_lf_ra_r_ms_re_ALL_a_d_spmeeg_sub-' p_names{move} '_ses-1_task-dur_run-01_meg.mat']));
+    D_short = spm_eeg_load(fullfile(filepath, ['short_offset_ronly_meg_bc_lf_ra_r_ms_re_faces_a_d_spmeeg_sub-' p_names{move} '_ses-1_task-dur_run-01_meg.mat']));
     D_short = timeonset(D_short, -0.1);
     D_short.save();
     
-    D_long = spm_eeg_load(fullfile(filepath, ['long_offset_ronly_meg_bc_lf_ra_r_ms_re_ALL_a_d_spmeeg_sub-' p_names{move} '_ses-1_task-dur_run-01_meg.mat']));
+    D_long = spm_eeg_load(fullfile(filepath, ['long_offset_ronly_meg_bc_lf_ra_r_ms_re_faces_a_d_spmeeg_sub-' p_names{move} '_ses-1_task-dur_run-01_meg.mat']));
     D_long = timeonset(D_long, -0.1);  
     D_long.save();
 
@@ -124,7 +124,7 @@ end
 
         % Data filename
         %--------------------------------------------------------------------------
-        filename = ['OFFSET_COMBINED_short_offset_ronly_meg_bc_lf_ra_r_ms_re_ALL_a_d_spmeeg_sub-' p_names{PP} '_ses-1_task-dur_run-01_meg.mat'];
+        filename = ['OFFSET_COMBINED_short_offset_ronly_meg_bc_lf_ra_r_ms_re_faces_a_d_spmeeg_sub-' p_names{PP} '_ses-1_task-dur_run-01_meg.mat'];
         spmeeg_file = fullfile(output_dir, filename);
     
         DCM.xY.Dfile = spmeeg_file;
